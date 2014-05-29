@@ -723,6 +723,16 @@ footer .owner p a {
   font-style: italic;
 }
 
+img#selfie {
+  display:inline;
+  float:right;
+  margin-left:5px;
+}
+
+ul#compSetup {
+	line-height:10px;
+}
+
 /* Markdown */
 .markdown-body h1,
 .markdown-body h2,
