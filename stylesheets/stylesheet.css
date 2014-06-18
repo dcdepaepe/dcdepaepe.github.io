@@ -176,6 +176,13 @@ sub {
   display: inline-block;
   float: right;
   margin-top: 5px;
+  margin-right: 10px;
+}
+
+#final{
+  display: inline-block;
+  float: right;
+  margin-top: 5px;
 }
 
 /* Embedded content
