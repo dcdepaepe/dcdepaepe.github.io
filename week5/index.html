@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Devin DePaepe</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Header -->
+        <header>
+            <h1>Devin DePaepe</h1>
+            <h2>Web Developer, East Lansing, MI</h2>
+        </header>
+
+        <!-- Map -->
+
+        <div id="map-location" data-0="background-image:url(img/map-bw.jpg);opacity:.5;"
+        data-500="background-image:url(img/map.jpg);opacity:1;" data-800="opacity:.5">
+            
+        </div>
+
+        <!-- Nav --> 
+
+        <nav data-0="position:absolute;top:800px;" data-800="position:absolute;top:800px;" data-1500="position:absolute;top:1550px;">
+            <ul>
+                <li><a id="about-button" href='#about'>About Devin</a></li>
+                <li><a href='#notebook'>Notebook</a></li>
+                <li><a href='#int'>Interests</a></li>
+                <li><a href='#contact'>Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Content -->
+
+        <article>
+
+            <section id="about">
+                <h3>About Devin</h3>
+                Nam sed neque vitae elit lacinia laoreet id sed ante. Nunc tempor faucibus nibh, congue tempor velit ultricies id. Fusce a aliquam sem, sed vestibulum tellus. Pellentesque at erat lacus. Proin vehicula volutpat ante sollicitudin posuere. Curabitur interdum libero eu egestas elementum. Proin a nulla ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed leo metus, tincidunt non nisi et, scelerisque consequat elit.<br><br>
+            </section>
+
+
+            <section id="notebook">
+                <h3>Notebook</h3>
+                <ul id="notebook-gallery">
+                    <li><img alt="notebook  week 5" src='img/notebook1.jpg'></li>
+                    <li><img alt="notebook  week 5" src='img/notebook2.jpg'></li>
+                    <li><img alt="notebook  week 5" src='img/notebook3.jpg'></li>
+                    <li><img alt="notebook  week 5" src='img/notebook4.jpg'></li>
+                    <li><img alt="notebook  week 5" src='img/notebook5.jpg'></li>
+                    <li><img alt="notebook  week 5" src='img/notebook6.jpg'></li>
+                </ul>
+            </section>
+
+
+            <section id="int">
+                <h3>Interests</h3>
+                Nam sed neque vitae elit lacinia laoreet id sed ante. Nunc tempor faucibus nibh, congue tempor velit ultricies id. Fusce a aliquam sem, sed vestibulum tellus. Pellentesque at erat lacus. Proin vehicula volutpat ante sollicitudin posuere. Curabitur interdum libero eu egestas elementum. Proin a nulla ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed leo metus, tincidunt non nisi et, scelerisque consequat elit.<br><br>
+            </section>
+
+
+            <section id="contact">
+                <h3>Contact</h3>
+                Nam sed neque vitae elit lacinia laoreet id sed ante. Nunc tempor faucibus nibh, congue tempor velit ultricies id. Fusce a aliquam sem, sed vestibulum tellus. Pellentesque at erat lacus. Proin vehicula volutpat ante sollicitudin posuere. Curabitur interdum libero eu egestas elementum. Proin a nulla ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed leo metus, tincidunt non nisi et, scelerisque consequat elit.<br><br>
+            </section>
+
+        </article>
+
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/vendor/skrollr.min.js"></script>
+        <script src="js/vendor/skrollr.menu.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <script type="text/javascript">
+        if ($(window).width()>600){
+            var s = skrollr.init();
+
+            //The options (second parameter) are all optional. The values shown are the default values.
+            skrollr.menu.init(s, {
+                //skrollr will smoothly animate to the new position using `animateTo`.
+                animate: true,
+
+                //The easing function to use.
+                easing: 'sqrt',
+
+                //Multiply your data-[offset] values so they match those set in skrollr.init
+                scale: 2,
+
+                //How long the animation should take in ms.
+                duration: function(currentTop, targetTop) {
+                    //By default, the duration is hardcoded at 500ms.
+                    return 700;
+
+                    //But you could calculate a value based on the current scroll position (`currentTop`) and the target scroll position (`targetTop`).
+                    //return Math.abs(currentTop - targetTop) * 10;
+                },
+
+                //If you pass a handleLink function you'll disable `data-menu-top` and `data-menu-offset`.
+                //You are in control where skrollr will scroll to. You get the clicked link as a parameter and are expected to return a number.
+               // handleLink: function(link) {
+                 //   return 400;//Hardcoding 400 doesn't make much sense.
+                //}
+            });
+        };
+        </script>
+    </body>
+</html>
