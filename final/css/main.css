@@ -97,21 +97,125 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* === Body === */
+body{
+    border-top:5px solid #424242;
+    height: 1300px;
+}
+
+/* ======== Nav Bars ========= */
+
+/* === Top-Nav ===*/
+#top-nav{
+    height: 80px;
+    width: 1199px;
+    padding: 0px;
+    margin-top: 4px;
+    background-color: #e3e3e3;
+    border-top: 1px solid #424242;
+    border-bottom: 1px solid #424242;
+}
+
+#top-nav li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 215px;
+    font-size: 25px;
+    float: left;
+    border-right: 1px solid #424242;
+}
+
+#top-nav a{
+    padding-right: 60px;
+    padding-left: 60px;
+    color: #424242;
+    text-decoration: none;
+}
+
+#top-nav li:hover{
+    background-color: #f3f3f3;
+}
+
+#top-nav #contact-button{
+    border-right: none;
+}
 
 
+/* === Right-Nav ===*/
+#right-nav{
+    margin-top: 4px;
+    float: right;
+    background-color: #e3e3e3;
+    width: 300px;
+    height: 785px;
+    padding-right: 75px;
+    padding-left: 25px;
+    font-size: 25px;
+    border-top: 1px solid #424242;
+    border-left: 1px solid #424242;
+    border-bottom: 1px solid #424242;
+}
+
+#right-nav li{
+    border-top: 1px solid #424242;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#right-nav a{
+    margin: 0px;
+    padding-left: 20px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #424242;
+    text-decoration: none;
+}
+
+#right-nav li:hover{
+    background-color: #f3f3f3;
+}
+
+#right-nav #pop-posts{
+    margin-top: -20px;
+    border-top: none;
+}
 
 
+/* === Article === */
+article{
+    margin-right: 450px;
+    margin-top: 120px;
+    height: 1726px;
+    margin-left: 15px;
+    font-size: 20px;
+}
 
 
+/* === Article-list === */
+#article-list{
+    list-style-type: none;
+}
 
+#article-list a{
+    text-decoration: none;
+}
 
+/* === Article-imgs === */
+.article-img{
+    height: 130px;
+    width: 180px;
+    float: left;
+    margin-right: 15px;
+}
 
-
-
-
-
-
-
+.inArticleImg{
+    height: 300px;
+    width: 420px;
+    float: left;
+    margin-right: 15px;
+}
 
 /* ==========================================================================
    Helper classes
