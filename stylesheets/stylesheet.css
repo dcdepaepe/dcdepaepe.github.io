@@ -172,6 +172,19 @@ sub {
   bottom: -0.25em;
 }
 
+#week5{
+  display: inline-block;
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+#final{
+  display: inline-block;
+  float: right;
+  margin-top: 5px;
+}
+
 /* Embedded content
    ========================================================================== */
 
